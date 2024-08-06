@@ -8,10 +8,10 @@
   color: #573A37;
 }
 
-body {background-image: url(./assents/bg-image.png);
-  background-repeat: no-repeat;
+body {
+  background-image: url(./assents/bg-image.jpg);
   background-size: cover;
-
+  
 }
 
 #page{
@@ -54,4 +54,15 @@ h1, h2 {
 
 ul {
   padding-left: 24px;
+}
+
+
+footer {
+  color: #F0E8C2;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+footer img {
+  vertical-align: middle ;
 }

@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
+:root {
   font-family: "Alice", serif;
   color: #573A37;
 }
@@ -11,20 +12,25 @@
 body {
   background-image: url(./assents/bg-image.jpg);
   background-size: cover;
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#page{
-  box-sizing: border-box;
-  width: 800px;
+#page {
+  width: 100%;
+  max-width: 800px;
   padding: 24px;
   background-color: #F0E8C2;
   border-radius: 24px;
   margin: 64px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 img {
   border-radius: 16px;
+  width: 100%;
+  height: auto;
 }
 
 main {
@@ -37,11 +43,11 @@ main {
 
 h1 {
   line-height: 140%;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-top: 24px;
 }
 
@@ -51,18 +57,38 @@ h1, h2 {
   line-height: 150%;
 }
 
-
 ul {
   padding-left: 24px;
 }
 
-
 footer {
   color: #F0E8C2;
   text-align: center;
-  padding-bottom: 48px;
+  padding: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: auto;
 }
 
 footer img {
-  vertical-align: middle ;
+  vertical-align: middle;
+  width: 20px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #page {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    padding: 16px;
+  }
 }
